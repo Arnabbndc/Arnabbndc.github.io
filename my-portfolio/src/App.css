@@ -1,7 +1,9 @@
+/* General App Styling */
 .App {
   text-align: center;
 }
 
+/* Header Styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -13,6 +15,7 @@
   color: white;
 }
 
+/* Profile Picture Styling */
 .Profile-picture {
   height: 200px;
   width: 200px;
@@ -20,3 +23,163 @@
   object-fit: cover;
   margin-bottom: 20px;
 }
+
+/* Skills Page Styling */
+.skills-container {
+  background-color: #1e1e1e; /* Dark background */
+  color: white;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 5px 20px;
+  border: 1px solid #61dafb; /* React theme color */
+  border-radius: 5px;
+  display: inline-block;
+  background: #282c34; /* Slightly lighter background for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.5);
+}
+
+
+/* About Section Styling */
+.about-container {
+  background-color: #1e1e1e; /* Dark background for consistency */
+  color: white; /* White text for readability */
+  padding: 50px 20px; /* Add spacing around the content */
+  text-align: center; /* Center-align text */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  margin: 20px auto; /* Center the container */
+  max-width: 800px; /* Limit the width for readability */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Typography for About Section */
+.about-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #61dafb; /* React theme color for heading */
+}
+
+.about-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Body Styling for Consistency */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1e1e1e; /* Match the dark theme */
+  color: white;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333; /* Dark background for header */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: sticky; /* Sticks to the top on scroll */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center; /* Center the navigation */
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Spacing between links */
+  margin: 0.5px auto;
+  padding: 10px 5px; 
+}
+
+.nav-link {
+  background-color: #292121; /* Dark background */
+  padding:10px 35px; /* Add spacing around the content */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  border-color: #ffffff; /* React blue border color */
+  text-decoration: none;
+  color: white; /* White text for links */
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.nav-link:hover {
+  color: #61dafb; /* React blue for hover effect */
+}
+
+.nav-list li:hover {
+  transform: scale(1.1); /* Slightly enlarge link on hover */
+  filter: drop-shadow(0px 8px 20px rgba(97, 226, 255, 0.9));
+}
+
+.nav-link.active {
+  color: #ffa500; /* Highlight the active page link */
+  font-weight: bold;
+}
+
+/* Education Section Styling */
+.education-container {
+  background-color: #1e1e1e; /* Consistent dark theme */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.education-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #61dafb; /* React blue for heading */
+}
+
+.education-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-item {
+  background-color: #282c34; /* Slightly lighter background for items */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffa500; /* Orange for institution name */
+}
+
+.education-item p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: white;
+}
+
