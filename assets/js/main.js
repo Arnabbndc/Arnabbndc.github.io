@@ -106,17 +106,6 @@
     });
   });
 
-  // Photo lightbox
-  var lb = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lightbox-img');
-  if (lb && typeof lb.showModal === 'function') {
-    document.querySelectorAll('.g-item').forEach(function (item) {
-      item.addEventListener('click', function () { lbImg.src = item.getAttribute('data-src'); lb.showModal(); });
-    });
-    lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
-    lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
-  }
-
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
