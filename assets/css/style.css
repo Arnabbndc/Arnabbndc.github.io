@@ -142,15 +142,15 @@ img { max-width: 100%; display: block; }
   display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center;
 }
 .eyebrow {
-  display: inline-flex; align-items: center; gap: 8px;
+  display: inline-block;
   padding: 6px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border);
   color: var(--muted); font-size: 14px; font-weight: 500; box-shadow: var(--shadow-sm);
 }
 .eyebrow .short { display: none; }
 .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-3) 25%, transparent); }
 .hero h1 { font-size: clamp(38px, 5.4vw, 62px); font-weight: 800; letter-spacing: -1px; margin: 20px 0 14px; }
-.hero .rotator { font-size: clamp(19px, 2.3vw, 25px); color: var(--muted); font-weight: 500; min-height: 1.6em; margin-bottom: 18px; }
-.rotator .word { color: var(--text); font-weight: 700; border-right: 3px solid var(--accent); padding-right: 4px; }
+.hero .subtitle { font-size: clamp(17px, 2vw, 21px); color: var(--accent); font-weight: 600; margin-bottom: 18px; }
+.hero .subtitle span { white-space: nowrap; }
 .hero .lead { font-size: 17.5px; color: var(--muted); max-width: 560px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 26px; }
 .socials { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; }
@@ -226,7 +226,7 @@ section.alt { background: var(--bg-alt); }
   content: ""; position: absolute; inset: 22px -22px -22px 22px; border-radius: 24px;
   background: var(--grad); opacity: .22; z-index: -1;
 }
-.about-text h3 { font-size: 26px; margin-bottom: 16px; }
+.about-title { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; margin-bottom: 18px; }
 .about-text p { color: var(--muted); }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
 .stat { padding: 18px 16px; text-align: center; }
@@ -445,6 +445,4 @@ footer .socials a { width: 38px; height: 38px; font-size: 16px; }
   .logo .name { display: none; }
   .eyebrow .long { display: none; }
   .eyebrow .short { display: inline; }
-  .hero .rotator { min-height: 3.3em; }
-  .rotator .word { display: inline-block; margin-top: 2px; }
 }
