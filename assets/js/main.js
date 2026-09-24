@@ -70,6 +70,26 @@
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
   }
 
+  // Rotating research areas in the hero
+  var words = ['Human-Computer Interaction', 'Human-AI Interaction', 'LLM Agents', 'Agentic AI'];
+  var rot = document.getElementById('rotator');
+  if (rot && !reduceMotion) {
+    var wi = 0, ci = words[0].length, deleting = true;
+    function tick() {
+      if (deleting) {
+        ci--;
+        if (ci <= 0) { deleting = false; wi = (wi + 1) % words.length; }
+      } else {
+        ci++;
+      }
+      rot.textContent = words[wi].slice(0, Math.max(ci, 0)) || '\u00a0';
+      var delay = deleting ? 45 : 85;
+      if (!deleting && ci >= words[wi].length) { deleting = true; delay = 1900; }
+      setTimeout(tick, delay);
+    }
+    setTimeout(tick, 2200);
+  }
+
   // Project filter
   var filters = document.querySelectorAll('.filter');
   var projects = document.querySelectorAll('.project');
