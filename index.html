@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arnab Bhattacharjee</title>
+  <meta name="description" content="Arnab Bhattacharjee, Lecturer in Computer Science and Engineering at United International University. Research in Human-Computer Interaction, human-AI interaction, and LLM agents.">
+  <meta name="author" content="Arnab Bhattacharjee">
+  <meta property="og:title" content="Arnab Bhattacharjee">
+  <meta property="og:description" content="Lecturer, CSE, United International University. Research in HCI, human-AI interaction, and LLM agents.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arnabbndc.github.io/">
+  <meta property="og:image" content="https://arnabbndc.github.io/assets/img/profile.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Arnab Bhattacharjee</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="cv/Arnab_Bhattacharjee_CV.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+
+  <header class="hero">
+    <img src="assets/img/profile.jpg" alt="Photo of Arnab Bhattacharjee" width="190" height="190">
+    <div>
+      <h1>Arnab Bhattacharjee</h1>
+      <p class="role">Lecturer, Department of Computer Science and Engineering<br>United International University (UIU), Dhaka, Bangladesh</p>
+      <ul class="links">
+        <li><a class="primary" href="cv/Arnab_Bhattacharjee_CV.pdf">CV (PDF)</a></li>
+        <li><a href="mailto:arnabbndc@gmail.com">arnabbndc@gmail.com</a></li>
+        <li><a href="mailto:arnab@cse.uiu.ac.bd">arnab@cse.uiu.ac.bd</a></li>
+        <li><a href="https://github.com/Arnabbndc">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/arnab-bhattacharjee-3600b6340/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a Lecturer in the Department of Computer Science and Engineering at <a href="https://www.uiu.ac.bd/">United International University</a> in Dhaka, Bangladesh. I received my B.Sc. in Computer Science and Engineering from <a href="https://www.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a> in 2025.</p>
+    <p>My research is in Human-Computer Interaction (HCI). I am interested in how people work with AI agents, and in building agentic systems that people can direct and trust. I am also interested in agentic AI and systems more broadly. My work combines qualitative HCI methods, such as semi-structured interviews, reflexive thematic analysis, and focus group discussions, with building and evaluating LLM-based systems.</p>
+    <ul class="interests" aria-label="Research interests">
+      <li>Human-Computer Interaction</li>
+      <li>Human-AI Interaction</li>
+      <li>LLM Agents and Agentic AI</li>
+      <li>Systems</li>
+    </ul>
+    <p class="note">I am looking for PhD opportunities in the USA starting in <strong>Fall 2027</strong>.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Human-AI Co-Creation for Technical Lecture Content</h3>
+        <span class="date">2026</span>
+      </div>
+      <ul class="tags"><li>HCI</li><li>Human-AI Co-Creation</li><li>Agentic AI</li></ul>
+      <p>We investigated how computer science educators author technical lecture content with generative AI tools. In a formative study, we conducted semi-structured interviews with university educators and analyzed them using reflexive thematic analysis to identify their challenges and derive design goals. Guided by these goals, we built an agentic pipeline that generates technical lecture content under the educator's direction. We then conducted a qualitative user evaluation through focus group discussions (FGDs) with educators.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Language Effects on LLM Web Agents</h3>
+      </div>
+      <ul class="tags"><li>LLM Agents</li><li>Web Agents</li><li>Multilingual Evaluation</li></ul>
+      <p>Most benchmarks for LLM web agents are English-only. We evaluated an HTML-based LLM web agent across several widely spoken languages in two settings: a controlled offline benchmark in which the page structure stays fixed and only the language changes, and live task execution on real localized websites. Alongside task performance, we quantified how much of the agent's observation actually changes with the language. Performance stayed close to English even when most of the page text was rewritten, while non-English pages consumed a substantially larger share of the model's context budget.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Undergraduate Thesis: Evaluating the Multilingual Capabilities of LLM-based Web UI Agent</h3>
+        <span class="date">2024 - 2025</span>
+      </div>
+      <p class="sub">BUET, supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/rifat">Dr. Rifat Shahriyar</a></p>
+      <ul class="tags"><li>LLM Agents</li><li>Agentic AI</li><li>NLP</li></ul>
+      <ul class="points">
+        <li>Developed a multilingual web agent that navigates web pages and performs actions to complete complex, multi-step tasks given by a user.</li>
+        <li>Fine-tuned a multilingual model (<a href="https://huggingface.co/google/mt5-base">mT5-base</a>) on an extended Mind2Web dataset to build a web agent.</li>
+        <li>Built web agents on three frontier LLMs (Gemini-2.0-Flash, GPT-4o-mini, and DeepSeek-V3) to evaluate their zero-shot performance.</li>
+        <li>Built a VLM-based automated evaluation system for web agents.</li>
+      </ul>
+    </article>
+
+    <h3 style="margin-top:8px">Poster</h3>
+    <article class="entry" style="margin-top:10px">
+      <p style="margin:0"><strong>How well do LLM Web Agents work for non-English Language?</strong></p>
+      <p class="authors">Abir Muhtasim*, <span class="me">Arnab Bhattacharjee</span>*, Abhik Bhattacharjee, Faria Huq, Rifat Shahriyar</p>
+      <p class="venue">LLM Agent Workshop, Carnegie Mellon University, Pittsburgh, PA, USA. May 2, 2024.</p>
+      <p class="small" style="margin:2px 0 0">* Equal contribution</p>
+      <p class="actions">
+        <a href="https://drive.google.com/file/d/1Qk3qLlRr2KUrko5iIbacQJlCZv-mghYE/view">Poster</a>
+        <a href="https://drive.google.com/file/d/1DgujFJPTuDN0nDbd2dZ-h3WkZgv5lOMr/view?usp=sharing">Extended Abstract</a>
+        <a href="https://cmu-agent-workshop.github.io/Previous_Schedule_2024/posters">Workshop</a>
+      </p>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Lecturer</h3>
+        <span class="date">July 2025 - Present</span>
+      </div>
+      <p class="sub">Department of Computer Science and Engineering, <a href="https://cse.uiu.ac.bd/faculty/arnab-bhattacharjee/">United International University</a>, Dhaka</p>
+      <ul class="points">
+        <li>Courses taught: Data Structures and Algorithms, Discrete Mathematics, Object-Oriented Programming, Operating Systems, Digital Logic Design, Network Security, and Social, Environment and Engineering Ethics.</li>
+        <li>Course coordinator for Microprocessor and Microcontroller (theory and lab), which includes embedded systems projects with Arduino and Raspberry Pi.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer</h3>
+        <span class="date">May 2025 - July 2025</span>
+      </div>
+      <p class="sub"><a href="https://research.samsung.com/srbd">Samsung Research and Development Institute, Bangladesh</a></p>
+      <ul class="points">
+        <li>Developed an Android application for an intelligent pen that writes on any surface, with the strokes appearing on the Android device automatically. Built with Kotlin in Android Studio.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>B.Sc. in Computer Science and Engineering</h3>
+        <span class="date">February 2020 - March 2025</span>
+      </div>
+      <p class="sub">Bangladesh University of Engineering and Technology (BUET), Dhaka</p>
+      <ul class="points">
+        <li>CGPA: 3.88 / 4.00</li>
+        <li>Dean's List Scholarship (Level 1 and Level 2)</li>
+        <li>Thesis: Evaluating the Multilingual Capabilities of LLM-based Web UI Agent, supervised by Dr. Rifat Shahriyar</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Higher Secondary Certificate (Science)</h3>
+        <span class="date">2017 - 2019</span>
+      </div>
+      <p class="sub">Notre Dame College, Dhaka. GPA: 5.00 / 5.00</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Secondary School Certificate (Science)</h3>
+        <span class="date">2007 - 2017</span>
+      </div>
+      <p class="sub">St. Gregory's High School and College, Dhaka. GPA: 5.00 / 5.00</p>
+    </article>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Machine Learning Assisted Gene Expression Restoration</h3>
+        <span class="date">2025</span>
+      </div>
+      <ul class="tags"><li>Machine Learning</li><li>Bioinformatics</li></ul>
+      <p>Identifying the transcription factors (TFs) whose perturbation moves a cell from a source state to a target state can support early detection of diseases. Existing approaches such as GAGER assume linear relationships between genes. We explored nonlinear models for gene expression restoration on several scRNA-seq datasets, and found that they often reduce expression differences using fewer TFs than the linear model.</p>
+      <p class="actions"><a href="https://github.com/Arnabbndc/Bioinformatics_Algorithms_Project">GitHub</a></p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Project Tokkhok: AI-Assisted Learning for Bengali-Speaking Students</h3>
+      </div>
+      <ul class="tags"><li>RAG</li><li>LLMs</li><li>React</li><li>FastAPI</li><li>PostgreSQL</li><li>Supabase</li></ul>
+      <ul class="points">
+        <li><strong>Chat with a knowledge base:</strong> users chat with their own uploaded files through retrieval over a vector database, in Bangla, Banglish (Bangla typed in English letters), or audio.</li>
+        <li><strong>Smart note editor:</strong> markdown notes with images, videos, and code. Notes written in Banglish can be converted to proper Bangla.</li>
+        <li><strong>Model enhancer:</strong> continuously improves the Banglish to Bangla translation model.</li>
+      </ul>
+      <p class="actions"><a href="https://youtu.be/2UInbtVz1oE">Demo</a><a href="https://github.com/hyadess/Project-Tokkhok">GitHub</a></p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Buldr-Bangladesh: A Platform for Engineers</h3>
+      </div>
+      <ul class="tags"><li>React</li><li>Spring Boot</li><li>PostgreSQL</li><li>Tailwind CSS</li><li>Firebase Auth</li></ul>
+      <p>A full-stack platform where engineers can learn, showcase their work, and earn from it.</p>
+      <ul class="points">
+        <li><strong>Learning:</strong> an AI chatbot, a smart notes application, and AI tools for summarizing and paraphrasing text.</li>
+        <li><strong>Showcasing:</strong> post creation with a rich editor and public project showcases.</li>
+        <li><strong>Monetizing:</strong> a marketplace to sell projects, with order tracking.</li>
+        <li><strong>Jobs:</strong> portfolios generated automatically from projects, with public notes shown as blogs.</li>
+      </ul>
+      <p class="actions"><a href="https://github.com/BuldrBangladesh">GitHub</a></p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Deepfake Image Detector Robust Against Adversarial Attacks</h3>
+      </div>
+      <ul class="tags"><li>Computer Vision</li><li>PyTorch</li><li>ViT</li><li>YOLOv11</li></ul>
+      <p>A detector for real and AI-generated images on the CIFAKE dataset, designed to be robust against adversarial noise. In black-box experiments, feature dropping and data augmentation reached up to 80% accuracy on adversarial data. In white-box experiments, custom adversarial noise layers and dropout layers improved model robustness.</p>
+      <p class="actions"><a href="https://github.com/Arnabbndc/CSE-472-ML-Project">GitHub</a></p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>TechWorld: E-Commerce Platform for PCs</h3>
+      </div>
+      <ul class="tags"><li>Node.js</li><li>Express.js</li><li>PostgreSQL</li><li>Oracle PL/SQL</li></ul>
+      <p>An e-commerce website for PCs and PC components, built around complex SQL queries and PL/SQL programming. Its core feature, PC-BUILDER, lets users assemble a custom PC from compatible parts.</p>
+      <p class="actions"><a href="https://github.com/Arnabbndc/TECHWORLD">GitHub</a></p>
+    </article>
+
+    <h3 style="margin-top:8px">Selected Course Projects</h3>
+    <ul class="plain" style="margin-top:10px">
+      <li><strong>Operating Systems (xv6):</strong> new system calls, an MLFQ scheduler, inter-process communication, and threading. <a href="https://github.com/Arnabbndc/CSE_314_OS">GitHub</a></li>
+      <li><strong>Computer Networks:</strong> TCP Adaptive Reno congestion control on NS-3, an FTP server with socket programming, and CRC and Hamming code error handling. <a href="https://github.com/Arnabbndc/CSE_322_NS-3">GitHub</a></li>
+      <li><strong>Compiler:</strong> a C compiler front end with Flex and Bison, with intermediate code generation for x86. <a href="https://github.com/Arnabbndc/ICG">GitHub</a></li>
+      <li><strong>Machine Learning:</strong> logistic regression with bagging and stacking, a feed-forward neural network from scratch, PCA, and the EM algorithm. <a href="https://github.com/Arnabbndc/CSE_472_ML">GitHub</a></li>
+      <li><strong>Artificial Intelligence:</strong> A* search for the N-puzzle, adversarial search for Mancala, GRASP for Max-Cut, and ID3 decision trees. <a href="https://github.com/Arnabbndc/CSE_318_AI">GitHub</a></li>
+      <li><strong>Computer Security:</strong> AES-128, Elliptic Curve Diffie-Hellman key exchange, and buffer overflow and XSS attacks.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>HCI Methods</dt><dd>Semi-structured interviews, reflexive thematic analysis, focus group discussions, formative studies</dd></div>
+      <div><dt>AI and LLMs</dt><dd>Agentic LLM pipelines, RAG, LLM-as-judge evaluation, web agents, PyTorch, fine-tuning transformer models</dd></div>
+      <div><dt>Languages</dt><dd>Python, C, C++, Java, JavaScript, Kotlin, SQL, Bash</dd></div>
+      <div><dt>Web</dt><dd>React, Tailwind CSS, Node.js, Express.js, Spring Boot, FastAPI, REST APIs</dd></div>
+      <div><dt>Databases</dt><dd>PostgreSQL, Supabase, Oracle DB, PL/SQL</dd></div>
+      <div><dt>Tools</dt><dd>Playwright, Android Studio, Postman, Swagger, LaTeX</dd></div>
+    </dl>
+    <p class="small" style="margin-top:12px">Competitive programming: 600+ problems solved across platforms. Codeforces max rating 1519 (<a href="https://codeforces.com/profile/hay_re_manosh">hay_re_manosh</a>).</p>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul class="plain">
+      <li><strong>Champion</strong>, ITVerse 2023 "TechTales" Project Showcase Competition, University of Dhaka</li>
+      <li><strong>Finalist</strong>, BUET CSE Fest Capture the Flag (CTF) Competition 2023</li>
+      <li><strong>Dean's List Scholarship</strong>, BUET (Level 1 and Level 2)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Arnab Bhattacharjee. Last updated September 2026.</p>
+  </footer>
+
+</main>
+</body>
+</html>
