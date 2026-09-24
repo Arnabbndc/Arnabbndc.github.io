@@ -6,267 +6,498 @@
   <title>Arnab Bhattacharjee</title>
   <meta name="description" content="Arnab Bhattacharjee, Lecturer in Computer Science and Engineering at United International University. Research in Human-Computer Interaction, human-AI interaction, and LLM agents.">
   <meta name="author" content="Arnab Bhattacharjee">
+  <meta name="theme-color" content="#4f46e5">
   <meta property="og:title" content="Arnab Bhattacharjee">
   <meta property="og:description" content="Lecturer, CSE, United International University. Research in HCI, human-AI interaction, and LLM agents.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arnabbndc.github.io/">
-  <meta property="og:image" content="https://arnabbndc.github.io/assets/img/profile.jpg">
+  <meta property="og:image" content="https://arnabbndc.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav class="nav" aria-label="Main">
-  <div class="wrap">
-    <a class="brand" href="#top">Arnab Bhattacharjee</a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="cv/Arnab_Bhattacharjee_CV.pdf">CV</a></li>
-    </ul>
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#home" class="logo" aria-label="Arnab Bhattacharjee, home">
+      <span class="logo-mark">AB</span>
+      <span class="name">Arnab Bhattacharjee</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
   </div>
-</nav>
+</header>
 
-<main class="wrap" id="top">
+<main>
 
-  <header class="hero">
-    <img src="assets/img/profile.jpg" alt="Photo of Arnab Bhattacharjee" width="190" height="190">
-    <div>
-      <h1>Arnab Bhattacharjee</h1>
-      <p class="role">Lecturer, Department of Computer Science and Engineering<br>United International University (UIU), Dhaka, Bangladesh</p>
-      <ul class="links">
-        <li><a class="primary" href="cv/Arnab_Bhattacharjee_CV.pdf">CV (PDF)</a></li>
-        <li><a href="mailto:arnabbndc@gmail.com">arnabbndc@gmail.com</a></li>
-        <li><a href="mailto:arnab@cse.uiu.ac.bd">arnab@cse.uiu.ac.bd</a></li>
-        <li><a href="https://github.com/Arnabbndc">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/arnab-bhattacharjee-3600b6340/">LinkedIn</a></li>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <span class="eyebrow"><span class="dot"></span> Lecturer, CSE · <span class="long">United International University</span><span class="short">UIU</span></span>
+      <h1>Hi, I'm <span class="grad-text">Arnab Bhattacharjee</span></h1>
+      <p class="rotator">Researching <span class="word" id="rotator">Human-Computer Interaction</span></p>
+      <p class="lead">I study how people work with AI agents, and I build agentic systems that people can direct and trust. My work combines qualitative HCI methods with building and evaluating LLM-based systems.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="cv/Arnab_Bhattacharjee_CV.pdf"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        <a class="btn" href="#contact"><i class="fa-regular fa-envelope"></i> Get in touch</a>
+      </div>
+      <ul class="socials">
+        <li><a href="mailto:arnabbndc@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://github.com/Arnabbndc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/arnab-bhattacharjee-3600b6340/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.kaggle.com/arnabndc03" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a></li>
       </ul>
     </div>
-  </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>I am a Lecturer in the Department of Computer Science and Engineering at <a href="https://www.uiu.ac.bd/">United International University</a> in Dhaka, Bangladesh. I received my B.Sc. in Computer Science and Engineering from <a href="https://www.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a> in 2025.</p>
-    <p>My research is in Human-Computer Interaction (HCI). I am interested in how people work with AI agents, and in building agentic systems that people can direct and trust. I am also interested in agentic AI and systems more broadly. My work combines qualitative HCI methods, such as semi-structured interviews, reflexive thematic analysis, and focus group discussions, with building and evaluating LLM-based systems.</p>
-    <ul class="interests" aria-label="Research interests">
-      <li>Human-Computer Interaction</li>
-      <li>Human-AI Interaction</li>
-      <li>LLM Agents and Agentic AI</li>
-      <li>Systems</li>
-    </ul>
-    <p class="note">I am looking for PhD opportunities in the USA starting in <strong>Fall 2027</strong>.</p>
-  </section>
+    <div class="hero-visual reveal">
+      <div class="portrait">
+        <img src="assets/img/hero.webp" alt="Arnab Bhattacharjee" width="522" height="760">
+      </div>
+      <span class="chip-float chip-1"><i class="fa-solid fa-users"></i> Human-AI Interaction</span>
+      <span class="chip-float chip-2"><i class="fa-solid fa-robot"></i> LLM Agents</span>
+      <span class="chip-float chip-3"><i class="fa-solid fa-diagram-project"></i> Agentic AI</span>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span class="mouse"></span>Scroll</a>
+</section>
 
-  <section id="research">
-    <h2>Research</h2>
+<!-- ================= ABOUT ================= -->
+<section class="alt" id="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <img src="assets/img/about.webp" alt="Arnab Bhattacharjee" width="900" height="900" loading="lazy">
+    </div>
+    <div class="about-text reveal">
+      <span class="kicker">About me</span>
+      <h3>HCI researcher and CS educator</h3>
+      <p>I am a Lecturer in the Department of Computer Science and Engineering at <a href="https://www.uiu.ac.bd/">United International University</a> in Dhaka, Bangladesh. I received my B.Sc. in Computer Science and Engineering from <a href="https://www.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a> in 2025.</p>
+      <p>My research is in Human-Computer Interaction (HCI). I am interested in how people work with AI agents, and in building agentic systems that people can direct and trust. I am also interested in agentic AI and systems more broadly. My work combines qualitative HCI methods, such as semi-structured interviews, reflexive thematic analysis, and focus group discussions, with building and evaluating LLM-based systems.</p>
+      <ul class="interest-list">
+        <li><i class="fa-solid fa-hand-pointer"></i> Human-Computer Interaction</li>
+        <li><i class="fa-solid fa-users"></i> Human-AI Interaction</li>
+        <li><i class="fa-solid fa-robot"></i> LLM Agents</li>
+        <li><i class="fa-solid fa-server"></i> Systems</li>
+      </ul>
+      <div class="stats">
+        <div class="stat card"><div class="num grad-text">3.88</div><div class="lbl">CGPA out of 4.00 at BUET</div></div>
+        <div class="stat card"><div class="num grad-text">8</div><div class="lbl">Courses taught at UIU</div></div>
+        <div class="stat card"><div class="num grad-text">CMU</div><div class="lbl">Workshop poster, 2024</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <article class="entry">
-      <div class="entry-head">
+<!-- ================= RESEARCH ================= -->
+<section id="research">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Research</span>
+      <h2>What I work on</h2>
+      <p>Human-AI co-creation, LLM agents, and how to evaluate them.</p>
+    </div>
+
+    <div class="research-grid">
+      <article class="card research-card reveal">
+        <div class="icon"><i class="fa-solid fa-people-arrows"></i></div>
         <h3>Human-AI Co-Creation for Technical Lecture Content</h3>
-        <span class="date">2026</span>
-      </div>
-      <ul class="tags"><li>HCI</li><li>Human-AI Co-Creation</li><li>Agentic AI</li></ul>
-      <p>We investigated how computer science educators author technical lecture content with generative AI tools. In a formative study, we conducted semi-structured interviews with university educators and analyzed them using reflexive thematic analysis to identify their challenges and derive design goals. Guided by these goals, we built an agentic pipeline that generates technical lecture content under the educator's direction. We then conducted a qualitative user evaluation through focus group discussions (FGDs) with educators.</p>
-    </article>
+        <ul class="tags"><li>HCI</li><li>Human-AI Co-Creation</li><li>Agentic AI</li></ul>
+        <p>We investigated how computer science educators author technical lecture content with generative AI tools. In a formative study, we conducted semi-structured interviews with university educators and analyzed them using reflexive thematic analysis to identify their challenges and derive design goals. Guided by these goals, we built an agentic pipeline that generates technical lecture content under the educator's direction. We then conducted a qualitative user evaluation through focus group discussions (FGDs) with educators.</p>
+        <div class="flow-label">Method</div>
+        <ul class="flow" aria-label="Research method">
+          <li>Semi-structured interviews</li><li class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></li>
+          <li>Reflexive thematic analysis</li><li class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></li>
+          <li>Agentic pipeline</li><li class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></li>
+          <li>Focus group discussions</li>
+        </ul>
+      </article>
 
-    <article class="entry">
-      <div class="entry-head">
+      <article class="card research-card reveal">
+        <div class="icon"><i class="fa-solid fa-language"></i></div>
         <h3>Language Effects on LLM Web Agents</h3>
+        <ul class="tags"><li>LLM Agents</li><li>Web Agents</li><li>Multilingual Evaluation</li></ul>
+        <p>Most benchmarks for LLM web agents are English-only. We evaluated an HTML-based LLM web agent across several widely spoken languages in two settings: a controlled offline benchmark in which the page structure stays fixed and only the language changes, and live task execution on real localized websites. Alongside task performance, we quantified how much of the agent's observation actually changes with the language. Performance stayed close to English even when most of the page text was rewritten, while non-English pages consumed a substantially larger share of the model's context budget.</p>
+        <div class="flow-label">Settings</div>
+        <ul class="flow" aria-label="Evaluation settings">
+          <li>Controlled offline benchmark</li><li class="arrow" aria-hidden="true"><i class="fa-solid fa-plus"></i></li>
+          <li>Live localized websites</li>
+        </ul>
+      </article>
+
+      <article class="card thesis-card reveal">
+        <div>
+          <ul class="tags"><li>Undergraduate Thesis</li><li>LLM Agents</li><li>NLP</li></ul>
+          <h3>Evaluating the Multilingual Capabilities of LLM-based Web UI Agent</h3>
+          <p class="meta"><i class="fa-solid fa-building-columns"></i> BUET, 2024 - 2025 · Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/rifat">Dr. Rifat Shahriyar</a></p>
+          <ul class="checklist">
+            <li>Developed a multilingual web agent that navigates web pages and performs actions to complete complex, multi-step tasks given by a user.</li>
+            <li>Fine-tuned a multilingual model (<a href="https://huggingface.co/google/mt5-base">mT5-base</a>) on an extended Mind2Web dataset to build a web agent.</li>
+            <li>Built web agents on three frontier LLMs (Gemini-2.0-Flash, GPT-4o-mini, and DeepSeek-V3) to evaluate their zero-shot performance.</li>
+            <li>Built a VLM-based automated evaluation system for web agents.</li>
+          </ul>
+        </div>
+        <div class="poster">
+          <span class="badge"><i class="fa-solid fa-thumbtack"></i> Poster · CMU 2024</span>
+          <h4>How well do LLM Web Agents work for non-English Language?</h4>
+          <p>Abir Muhtasim*, <strong>Arnab Bhattacharjee</strong>*, Abhik Bhattacharjee, Faria Huq, Rifat Shahriyar</p>
+          <p>LLM Agent Workshop, Carnegie Mellon University, Pittsburgh, PA, USA. May 2, 2024.</p>
+          <p style="font-size:12.5px;opacity:.85">* Equal contribution</p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1Qk3qLlRr2KUrko5iIbacQJlCZv-mghYE/view"><i class="fa-regular fa-file-image"></i> Poster</a>
+            <a href="https://drive.google.com/file/d/1DgujFJPTuDN0nDbd2dZ-h3WkZgv5lOMr/view?usp=sharing"><i class="fa-regular fa-file-lines"></i> Abstract</a>
+            <a href="https://cmu-agent-workshop.github.io/Previous_Schedule_2024/posters"><i class="fa-solid fa-arrow-up-right-from-square"></i> Workshop</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE + EDUCATION ================= -->
+<section class="alt" id="journey">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Journey</span>
+      <h2>Experience and Education</h2>
+    </div>
+    <div class="two-col">
+      <div class="reveal">
+        <h3 class="col-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        <ul class="timeline">
+          <li>
+            <div class="card t-card">
+              <span class="t-date">July 2025 - Present</span>
+              <h4>Lecturer</h4>
+              <p class="t-org">Department of CSE, <a href="https://cse.uiu.ac.bd/faculty/arnab-bhattacharjee/">United International University</a></p>
+              <ul>
+                <li>Courses taught: Data Structures and Algorithms, Discrete Mathematics, Object-Oriented Programming, Operating Systems, Digital Logic Design, Network Security, and Social, Environment and Engineering Ethics.</li>
+                <li>Course coordinator for Microprocessor and Microcontroller (theory and lab), including embedded systems projects with Arduino and Raspberry Pi.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="card t-card">
+              <span class="t-date">May 2025 - July 2025</span>
+              <h4>Software Engineer</h4>
+              <p class="t-org"><a href="https://research.samsung.com/srbd">Samsung Research and Development Institute, Bangladesh</a></p>
+              <ul>
+                <li>Developed an Android application for an intelligent pen that writes on any surface, with the strokes appearing on the Android device automatically. Built with Kotlin in Android Studio.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="tags"><li>LLM Agents</li><li>Web Agents</li><li>Multilingual Evaluation</li></ul>
-      <p>Most benchmarks for LLM web agents are English-only. We evaluated an HTML-based LLM web agent across several widely spoken languages in two settings: a controlled offline benchmark in which the page structure stays fixed and only the language changes, and live task execution on real localized websites. Alongside task performance, we quantified how much of the agent's observation actually changes with the language. Performance stayed close to English even when most of the page text was rewritten, while non-English pages consumed a substantially larger share of the model's context budget.</p>
-    </article>
 
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Undergraduate Thesis: Evaluating the Multilingual Capabilities of LLM-based Web UI Agent</h3>
-        <span class="date">2024 - 2025</span>
+      <div class="reveal">
+        <h3 class="col-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <ul class="timeline">
+          <li>
+            <div class="card t-card">
+              <span class="t-date">2020 - 2025</span>
+              <h4>B.Sc. in Computer Science and Engineering</h4>
+              <p class="t-org">Bangladesh University of Engineering and Technology (BUET)</p>
+              <span class="gpa"><i class="fa-solid fa-star"></i> CGPA 3.88 / 4.00</span>
+              <ul style="margin-top:6px">
+                <li>Dean's List Scholarship (Level 1 and Level 2)</li>
+                <li>Thesis on multilingual LLM web agents, supervised by Dr. Rifat Shahriyar</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="card t-card">
+              <span class="t-date">2017 - 2019</span>
+              <h4>Higher Secondary Certificate (Science)</h4>
+              <p class="t-org">Notre Dame College, Dhaka</p>
+              <span class="gpa"><i class="fa-solid fa-star"></i> GPA 5.00 / 5.00</span>
+            </div>
+          </li>
+          <li>
+            <div class="card t-card">
+              <span class="t-date">2007 - 2017</span>
+              <h4>Secondary School Certificate (Science)</h4>
+              <p class="t-org">St. Gregory's High School and College, Dhaka</p>
+              <span class="gpa"><i class="fa-solid fa-star"></i> GPA 5.00 / 5.00</span>
+            </div>
+          </li>
+        </ul>
       </div>
-      <p class="sub">BUET, supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/rifat">Dr. Rifat Shahriyar</a></p>
-      <ul class="tags"><li>LLM Agents</li><li>Agentic AI</li><li>NLP</li></ul>
-      <ul class="points">
-        <li>Developed a multilingual web agent that navigates web pages and performs actions to complete complex, multi-step tasks given by a user.</li>
-        <li>Fine-tuned a multilingual model (<a href="https://huggingface.co/google/mt5-base">mT5-base</a>) on an extended Mind2Web dataset to build a web agent.</li>
-        <li>Built web agents on three frontier LLMs (Gemini-2.0-Flash, GPT-4o-mini, and DeepSeek-V3) to evaluate their zero-shot performance.</li>
-        <li>Built a VLM-based automated evaluation system for web agents.</li>
-      </ul>
-    </article>
+    </div>
+  </div>
+</section>
 
-    <h3 style="margin-top:8px">Poster</h3>
-    <article class="entry" style="margin-top:10px">
-      <p style="margin:0"><strong>How well do LLM Web Agents work for non-English Language?</strong></p>
-      <p class="authors">Abir Muhtasim*, <span class="me">Arnab Bhattacharjee</span>*, Abhik Bhattacharjee, Faria Huq, Rifat Shahriyar</p>
-      <p class="venue">LLM Agent Workshop, Carnegie Mellon University, Pittsburgh, PA, USA. May 2, 2024.</p>
-      <p class="small" style="margin:2px 0 0">* Equal contribution</p>
-      <p class="actions">
-        <a href="https://drive.google.com/file/d/1Qk3qLlRr2KUrko5iIbacQJlCZv-mghYE/view">Poster</a>
-        <a href="https://drive.google.com/file/d/1DgujFJPTuDN0nDbd2dZ-h3WkZgv5lOMr/view?usp=sharing">Extended Abstract</a>
-        <a href="https://cmu-agent-workshop.github.io/Previous_Schedule_2024/posters">Workshop</a>
-      </p>
-    </article>
-  </section>
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Projects</span>
+      <h2>Things I have built</h2>
+      <p>From machine learning research to full-stack platforms and systems programming.</p>
+    </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button class="filter active" type="button" data-filter="all">All</button>
+      <button class="filter" type="button" data-filter="ai">AI and ML</button>
+      <button class="filter" type="button" data-filter="web">Full-Stack</button>
+      <button class="filter" type="button" data-filter="systems">Systems</button>
+    </div>
 
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Lecturer</h3>
-        <span class="date">July 2025 - Present</span>
-      </div>
-      <p class="sub">Department of Computer Science and Engineering, <a href="https://cse.uiu.ac.bd/faculty/arnab-bhattacharjee/">United International University</a>, Dhaka</p>
-      <ul class="points">
-        <li>Courses taught: Data Structures and Algorithms, Discrete Mathematics, Object-Oriented Programming, Operating Systems, Digital Logic Design, Network Security, and Social, Environment and Engineering Ethics.</li>
-        <li>Course coordinator for Microprocessor and Microcontroller (theory and lab), which includes embedded systems projects with Arduino and Raspberry Pi.</li>
-      </ul>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Software Engineer</h3>
-        <span class="date">May 2025 - July 2025</span>
-      </div>
-      <p class="sub"><a href="https://research.samsung.com/srbd">Samsung Research and Development Institute, Bangladesh</a></p>
-      <ul class="points">
-        <li>Developed an Android application for an intelligent pen that writes on any surface, with the strokes appearing on the Android device automatically. Built with Kotlin in Android Studio.</li>
-      </ul>
-    </article>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>B.Sc. in Computer Science and Engineering</h3>
-        <span class="date">February 2020 - March 2025</span>
-      </div>
-      <p class="sub">Bangladesh University of Engineering and Technology (BUET), Dhaka</p>
-      <ul class="points">
-        <li>CGPA: 3.88 / 4.00</li>
-        <li>Dean's List Scholarship (Level 1 and Level 2)</li>
-        <li>Thesis: Evaluating the Multilingual Capabilities of LLM-based Web UI Agent, supervised by Dr. Rifat Shahriyar</li>
-      </ul>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Higher Secondary Certificate (Science)</h3>
-        <span class="date">2017 - 2019</span>
-      </div>
-      <p class="sub">Notre Dame College, Dhaka. GPA: 5.00 / 5.00</p>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Secondary School Certificate (Science)</h3>
-        <span class="date">2007 - 2017</span>
-      </div>
-      <p class="sub">St. Gregory's High School and College, Dhaka. GPA: 5.00 / 5.00</p>
-    </article>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <article class="entry">
-      <div class="entry-head">
+    <div class="project-grid">
+      <article class="card project reveal" data-cat="ai">
+        <div class="p-top"><span class="p-icon c3"><i class="fa-solid fa-dna"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/Bioinformatics_Algorithms_Project" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
         <h3>Machine Learning Assisted Gene Expression Restoration</h3>
-        <span class="date">2025</span>
+        <p>Explored nonlinear models for finding the transcription factors that restore gene expression from a source cell state to a target state, extending the linear GAGER approach. Nonlinear models often reduced expression differences using fewer transcription factors.</p>
+        <ul class="tags"><li>Machine Learning</li><li>Bioinformatics</li><li>scRNA-seq</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="ai web">
+        <div class="p-top"><span class="p-icon c1"><i class="fa-solid fa-language"></i></span>
+          <div class="p-links"><a href="https://youtu.be/2UInbtVz1oE" aria-label="Demo video"><i class="fa-brands fa-youtube"></i></a><a href="https://github.com/hyadess/Project-Tokkhok" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Project Tokkhok</h3>
+        <p>AI-assisted learning platform for Bengali-speaking students. Chat with an uploaded knowledge base in Bangla, Banglish, or audio, and convert Banglish notes to proper Bangla with an improving translation model.</p>
+        <ul class="tags"><li>RAG</li><li>React</li><li>FastAPI</li><li>Supabase</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="web">
+        <div class="p-top"><span class="p-icon c2"><i class="fa-solid fa-helmet-safety"></i></span>
+          <div class="p-links"><a href="https://github.com/BuldrBangladesh" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Buldr-Bangladesh</h3>
+        <p>A platform where engineers learn with AI tools, showcase their projects, sell them in a marketplace with order tracking, and get portfolios generated automatically.</p>
+        <ul class="tags"><li>React</li><li>Spring Boot</li><li>PostgreSQL</li><li>Firebase</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="ai">
+        <div class="p-top"><span class="p-icon c5"><i class="fa-solid fa-user-secret"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/CSE-472-ML-Project" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Deepfake Image Detector</h3>
+        <p>Detector for real and AI-generated images, designed to be robust against adversarial attacks. Feature dropping and augmentation reached up to 80% accuracy on adversarial data.</p>
+        <ul class="tags"><li>PyTorch</li><li>ViT</li><li>YOLOv11</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="web">
+        <div class="p-top"><span class="p-icon c4"><i class="fa-solid fa-desktop"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/TECHWORLD" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>TechWorld</h3>
+        <p>E-commerce website for PCs built around complex SQL and PL/SQL. Its PC-BUILDER feature lets users assemble a custom PC from compatible parts.</p>
+        <ul class="tags"><li>Node.js</li><li>Express.js</li><li>PostgreSQL</li><li>Oracle</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="ai">
+        <div class="p-top"><span class="p-icon c1"><i class="fa-solid fa-brain"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/CSE_472_ML" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Machine Learning from Scratch</h3>
+        <p>Logistic regression with bagging and stacking, a feed-forward neural network with batch normalization, dropout, and Adam, plus PCA and the EM algorithm.</p>
+        <ul class="tags"><li>Python</li><li>NumPy</li><li>Course Project</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="systems">
+        <div class="p-top"><span class="p-icon c6"><i class="fa-solid fa-microchip"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/CSE_314_OS" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Improving the xv6 Operating System</h3>
+        <p>New system calls, an MLFQ scheduler, inter-process communication, and threading support for xv6.</p>
+        <ul class="tags"><li>C</li><li>xv6</li><li>Course Project</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="systems">
+        <div class="p-top"><span class="p-icon c2"><i class="fa-solid fa-network-wired"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/CSE_322_NS-3" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Networking with NS-3</h3>
+        <p>TCP Adaptive Reno congestion control on NS-3, an FTP server with socket programming, and CRC and Hamming code error handling.</p>
+        <ul class="tags"><li>C++</li><li>NS-3</li><li>Course Project</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="systems">
+        <div class="p-top"><span class="p-icon c5"><i class="fa-solid fa-code"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/ICG" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Mini C Compiler</h3>
+        <p>A C compiler front end built with Flex and Bison, with a symbol table and intermediate code generation for x86.</p>
+        <ul class="tags"><li>Flex</li><li>Bison</li><li>x86</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="ai">
+        <div class="p-top"><span class="p-icon c3"><i class="fa-solid fa-chess"></i></span>
+          <div class="p-links"><a href="https://github.com/Arnabbndc/CSE_318_AI" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+        <h3>Classic AI Algorithms</h3>
+        <p>A* search for the N-puzzle, adversarial search for Mancala, GRASP for Max-Cut, and ID3 decision trees.</p>
+        <ul class="tags"><li>Search</li><li>Game AI</li><li>Course Project</li></ul>
+      </article>
+
+      <article class="card project reveal" data-cat="systems">
+        <div class="p-top"><span class="p-icon c4"><i class="fa-solid fa-lock"></i></span></div>
+        <h3>Computer Security</h3>
+        <p>AES-128 encryption, Elliptic Curve Diffie-Hellman key exchange, and hands-on buffer overflow and XSS attacks.</p>
+        <ul class="tags"><li>Cryptography</li><li>Security</li><li>Course Project</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS + AWARDS ================= -->
+<section class="alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Skills</span>
+      <h2>Toolbox</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-comments"></i> HCI Methods</h3>
+        <ul class="tags"><li>Semi-structured interviews</li><li>Reflexive thematic analysis</li><li>Focus group discussions</li><li>Formative studies</li></ul>
       </div>
-      <ul class="tags"><li>Machine Learning</li><li>Bioinformatics</li></ul>
-      <p>Identifying the transcription factors (TFs) whose perturbation moves a cell from a source state to a target state can support early detection of diseases. Existing approaches such as GAGER assume linear relationships between genes. We explored nonlinear models for gene expression restoration on several scRNA-seq datasets, and found that they often reduce expression differences using fewer TFs than the linear model.</p>
-      <p class="actions"><a href="https://github.com/Arnabbndc/Bioinformatics_Algorithms_Project">GitHub</a></p>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Project Tokkhok: AI-Assisted Learning for Bengali-Speaking Students</h3>
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-robot"></i> AI and LLMs</h3>
+        <ul class="tags"><li>Agentic LLM pipelines</li><li>RAG</li><li>LLM-as-judge evaluation</li><li>Web agents</li><li>PyTorch</li><li>Fine-tuning transformers</li></ul>
       </div>
-      <ul class="tags"><li>RAG</li><li>LLMs</li><li>React</li><li>FastAPI</li><li>PostgreSQL</li><li>Supabase</li></ul>
-      <ul class="points">
-        <li><strong>Chat with a knowledge base:</strong> users chat with their own uploaded files through retrieval over a vector database, in Bangla, Banglish (Bangla typed in English letters), or audio.</li>
-        <li><strong>Smart note editor:</strong> markdown notes with images, videos, and code. Notes written in Banglish can be converted to proper Bangla.</li>
-        <li><strong>Model enhancer:</strong> continuously improves the Banglish to Bangla translation model.</li>
-      </ul>
-      <p class="actions"><a href="https://youtu.be/2UInbtVz1oE">Demo</a><a href="https://github.com/hyadess/Project-Tokkhok">GitHub</a></p>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Buldr-Bangladesh: A Platform for Engineers</h3>
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-code"></i> Languages</h3>
+        <ul class="tags"><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>Kotlin</li><li>SQL</li><li>Bash</li></ul>
       </div>
-      <ul class="tags"><li>React</li><li>Spring Boot</li><li>PostgreSQL</li><li>Tailwind CSS</li><li>Firebase Auth</li></ul>
-      <p>A full-stack platform where engineers can learn, showcase their work, and earn from it.</p>
-      <ul class="points">
-        <li><strong>Learning:</strong> an AI chatbot, a smart notes application, and AI tools for summarizing and paraphrasing text.</li>
-        <li><strong>Showcasing:</strong> post creation with a rich editor and public project showcases.</li>
-        <li><strong>Monetizing:</strong> a marketplace to sell projects, with order tracking.</li>
-        <li><strong>Jobs:</strong> portfolios generated automatically from projects, with public notes shown as blogs.</li>
-      </ul>
-      <p class="actions"><a href="https://github.com/BuldrBangladesh">GitHub</a></p>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Deepfake Image Detector Robust Against Adversarial Attacks</h3>
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-layer-group"></i> Web</h3>
+        <ul class="tags"><li>React</li><li>Tailwind CSS</li><li>Node.js</li><li>Express.js</li><li>Spring Boot</li><li>FastAPI</li><li>REST APIs</li></ul>
       </div>
-      <ul class="tags"><li>Computer Vision</li><li>PyTorch</li><li>ViT</li><li>YOLOv11</li></ul>
-      <p>A detector for real and AI-generated images on the CIFAKE dataset, designed to be robust against adversarial noise. In black-box experiments, feature dropping and data augmentation reached up to 80% accuracy on adversarial data. In white-box experiments, custom adversarial noise layers and dropout layers improved model robustness.</p>
-      <p class="actions"><a href="https://github.com/Arnabbndc/CSE-472-ML-Project">GitHub</a></p>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>TechWorld: E-Commerce Platform for PCs</h3>
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+        <ul class="tags"><li>PostgreSQL</li><li>Supabase</li><li>Oracle DB</li><li>PL/SQL</li></ul>
       </div>
-      <ul class="tags"><li>Node.js</li><li>Express.js</li><li>PostgreSQL</li><li>Oracle PL/SQL</li></ul>
-      <p>An e-commerce website for PCs and PC components, built around complex SQL queries and PL/SQL programming. Its core feature, PC-BUILDER, lets users assemble a custom PC from compatible parts.</p>
-      <p class="actions"><a href="https://github.com/Arnabbndc/TECHWORLD">GitHub</a></p>
-    </article>
+      <div class="card skill-card reveal">
+        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+        <ul class="tags"><li>Playwright</li><li>Android Studio</li><li>Postman</li><li>Swagger</li><li>LaTeX</li></ul>
+      </div>
+    </div>
 
-    <h3 style="margin-top:8px">Selected Course Projects</h3>
-    <ul class="plain" style="margin-top:10px">
-      <li><strong>Operating Systems (xv6):</strong> new system calls, an MLFQ scheduler, inter-process communication, and threading. <a href="https://github.com/Arnabbndc/CSE_314_OS">GitHub</a></li>
-      <li><strong>Computer Networks:</strong> TCP Adaptive Reno congestion control on NS-3, an FTP server with socket programming, and CRC and Hamming code error handling. <a href="https://github.com/Arnabbndc/CSE_322_NS-3">GitHub</a></li>
-      <li><strong>Compiler:</strong> a C compiler front end with Flex and Bison, with intermediate code generation for x86. <a href="https://github.com/Arnabbndc/ICG">GitHub</a></li>
-      <li><strong>Machine Learning:</strong> logistic regression with bagging and stacking, a feed-forward neural network from scratch, PCA, and the EM algorithm. <a href="https://github.com/Arnabbndc/CSE_472_ML">GitHub</a></li>
-      <li><strong>Artificial Intelligence:</strong> A* search for the N-puzzle, adversarial search for Mancala, GRASP for Max-Cut, and ID3 decision trees. <a href="https://github.com/Arnabbndc/CSE_318_AI">GitHub</a></li>
-      <li><strong>Computer Security:</strong> AES-128, Elliptic Curve Diffie-Hellman key exchange, and buffer overflow and XSS attacks.</li>
-    </ul>
-  </section>
+    <div class="section-head reveal" style="margin-top:80px">
+      <span class="kicker">Awards</span>
+      <h2>Recognition</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="card award reveal">
+        <div class="medal" style="background:linear-gradient(135deg,#f59e0b,#f97316)"><i class="fa-solid fa-trophy"></i></div>
+        <h3>Champion</h3>
+        <p>ITVerse 2023 "TechTales" Project Showcase Competition, University of Dhaka</p>
+      </div>
+      <div class="card award reveal">
+        <div class="medal" style="background:linear-gradient(135deg,#4f46e5,#0ea5e9)"><i class="fa-solid fa-flag"></i></div>
+        <h3>Finalist</h3>
+        <p>BUET CSE Fest Capture the Flag (CTF) Competition 2023</p>
+      </div>
+      <div class="card award reveal">
+        <div class="medal" style="background:linear-gradient(135deg,#14b8a6,#059669)"><i class="fa-solid fa-award"></i></div>
+        <h3>Dean's List Scholarship</h3>
+        <p>BUET, Level 1 and Level 2</p>
+      </div>
+    </div>
+    <p class="cp-note">Competitive programming: 600+ problems solved across platforms. Codeforces max rating 1519 (<a href="https://codeforces.com/profile/hay_re_manosh">hay_re_manosh</a>).</p>
+  </div>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <dl class="skills">
-      <div><dt>HCI Methods</dt><dd>Semi-structured interviews, reflexive thematic analysis, focus group discussions, formative studies</dd></div>
-      <div><dt>AI and LLMs</dt><dd>Agentic LLM pipelines, RAG, LLM-as-judge evaluation, web agents, PyTorch, fine-tuning transformer models</dd></div>
-      <div><dt>Languages</dt><dd>Python, C, C++, Java, JavaScript, Kotlin, SQL, Bash</dd></div>
-      <div><dt>Web</dt><dd>React, Tailwind CSS, Node.js, Express.js, Spring Boot, FastAPI, REST APIs</dd></div>
-      <div><dt>Databases</dt><dd>PostgreSQL, Supabase, Oracle DB, PL/SQL</dd></div>
-      <div><dt>Tools</dt><dd>Playwright, Android Studio, Postman, Swagger, LaTeX</dd></div>
-    </dl>
-    <p class="small" style="margin-top:12px">Competitive programming: 600+ problems solved across platforms. Codeforces max rating 1519 (<a href="https://codeforces.com/profile/hay_re_manosh">hay_re_manosh</a>).</p>
-  </section>
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Beyond research</span>
+      <h2>Moments</h2>
+      <p>A few moments from outside the classroom and the lab.</p>
+    </div>
+    <div class="gallery">
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g1.webp" aria-label="View photo 1">
+        <img src="assets/img/gallery/g1.webp" alt="Arnab Bhattacharjee, photo 1" loading="lazy">
+      </button>
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g2.webp" aria-label="View photo 2">
+        <img src="assets/img/gallery/g2.webp" alt="Arnab Bhattacharjee, photo 2" loading="lazy">
+      </button>
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g3.webp" aria-label="View photo 3">
+        <img src="assets/img/gallery/g3.webp" alt="Arnab Bhattacharjee, photo 3" loading="lazy">
+      </button>
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g4.webp" aria-label="View photo 4">
+        <img src="assets/img/gallery/g4.webp" alt="Arnab Bhattacharjee, photo 4" loading="lazy">
+      </button>
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g5.webp" aria-label="View photo 5">
+        <img src="assets/img/gallery/g5.webp" alt="Arnab Bhattacharjee, photo 5" loading="lazy">
+      </button>
+      <button class="g-item reveal" type="button" data-src="assets/img/gallery/g6.webp" aria-label="View photo 6">
+        <img src="assets/img/gallery/g6.webp" alt="Arnab Bhattacharjee, photo 6" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
 
-  <section id="awards">
-    <h2>Awards</h2>
-    <ul class="plain">
-      <li><strong>Champion</strong>, ITVerse 2023 "TechTales" Project Showcase Competition, University of Dhaka</li>
-      <li><strong>Finalist</strong>, BUET CSE Fest Capture the Flag (CTF) Competition 2023</li>
-      <li><strong>Dean's List Scholarship</strong>, BUET (Level 1 and Level 2)</li>
-    </ul>
-  </section>
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <button class="icon-btn lb-close" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="Arnab Bhattacharjee, enlarged photo" id="lightbox-img">
+</dialog>
 
-  <footer>
-    <p>© 2026 Arnab Bhattacharjee. Last updated September 2026.</p>
-  </footer>
+<!-- ================= CONTACT ================= -->
+<section class="alt" id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <div class="contact-body">
+        <span class="kicker">Contact</span>
+        <h2>Let's connect</h2>
+        <p>I am always happy to talk about research in HCI, human-AI interaction, and LLM agents. The best way to reach me is by email.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:arnabbndc@gmail.com"><i class="fa-solid fa-envelope"></i><span>arnabbndc@gmail.com<small>Personal email</small></span></a></li>
+          <li><a href="mailto:arnab@cse.uiu.ac.bd"><i class="fa-solid fa-building-columns"></i><span>arnab@cse.uiu.ac.bd<small>University email</small></span></a></li>
+          <li><a href="https://www.linkedin.com/in/arnab-bhattacharjee-3600b6340/"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn<small>in/arnab-bhattacharjee-3600b6340</small></span></a></li>
+          <li><a href="cv/Arnab_Bhattacharjee_CV.pdf"><i class="fa-solid fa-file-arrow-down"></i><span>Curriculum Vitae<small>PDF</small></span></a></li>
+        </ul>
+      </div>
+      <div class="contact-img">
+        <img src="assets/img/contact.webp" alt="Arnab Bhattacharjee" loading="lazy" width="690" height="1100">
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
+
+<footer>
+  <div class="container">
+    <span>© <span id="year">2026</span> Arnab Bhattacharjee</span>
+    <ul class="socials">
+      <li><a href="mailto:arnabbndc@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://github.com/Arnabbndc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/arnab-bhattacharjee-3600b6340/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.kaggle.com/arnabndc03" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
