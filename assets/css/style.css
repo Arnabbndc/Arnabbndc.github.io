@@ -258,7 +258,7 @@ section.alt { background: var(--bg-alt); }
 .interest-list i { color: var(--accent); }
 
 /* ============ Research ============ */
-.research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.research-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .research-card { padding: 30px; display: flex; flex-direction: column; gap: 14px; }
 .research-card .icon {
   width: 54px; height: 54px; border-radius: 14px; background: var(--accent-soft); color: var(--accent);
@@ -418,10 +418,11 @@ footer .socials a { width: 38px; height: 38px; font-size: 16px; }
   .chip-1 { left: 0; } .chip-2 { right: 0; } .chip-3 { left: 4%; }
 
   .about-grid, .research-grid, .thesis-card, .two-col, .contact-card { grid-template-columns: 1fr; }
-  .about-photo { max-width: 420px; margin: 0 auto; }
-  .contact-img { min-height: 300px; order: -1; }
+  .about-photo { max-width: 300px; margin: 0 auto; }
+  .contact-img { min-height: 260px; order: -1; }
   .awards-grid { grid-template-columns: 1fr; }
-  section { padding: 72px 0; }
+  section { padding: 60px 0; }
+  .section-head { margin-bottom: 32px; }
 }
 
 @media (max-width: 600px) {
@@ -434,6 +435,39 @@ footer .socials a { width: 38px; height: 38px; font-size: 16px; }
   .contact-body { padding: 28px 22px; }
   .chip-float { font-size: 12.5px; padding: 8px 11px; }
   .logo .name { display: none; }
+  /* Compact phone layout */
+  section { padding: 44px 0; }
+  .section-head { margin-bottom: 22px; }
+  .section-head h2, .about-title { font-size: 26px; }
+  .hero { padding-top: calc(var(--nav-h) + 18px); padding-bottom: 80px; }
+  .hero-grid { gap: 20px; }
+  .portrait { width: 200px; border-radius: 110px 110px 20px 20px; }
+  .hero h1 { margin: 14px 0 8px; }
+  .hero .lead { font-size: 15.5px; }
+  .hero-cta { margin: 18px 0; }
+  .btn { padding: 10px 16px; font-size: 14.5px; }
+  .about-grid { gap: 22px; }
+  .about-photo { max-width: 170px; }
+  .about-photo img { aspect-ratio: 1; border-radius: 50%; object-position: 50% 25%; }
+  .about-photo::before { display: none; }
+  .about-title { text-align: center; margin-bottom: 12px; }
+  .interest-list { gap: 8px; margin-top: 14px; }
+  .interest-list li { padding: 6px 10px; font-size: 13.5px; }
+  .research-card, .thesis-card { padding: 20px; gap: 12px; }
+  .research-card .icon { width: 44px; height: 44px; font-size: 18px; }
+  .research-card h3, .thesis-card h3 { font-size: 18px; }
+  .research-card p { font-size: 15px; }
+  .poster { padding: 18px; }
+  .col-title { font-size: 19px; margin-bottom: 16px; }
+  .t-card { padding: 16px 16px; }
+  .timeline > li { margin-bottom: 14px; }
+  .project { padding: 18px; gap: 10px; }
+  .project-grid, .skills-grid, .awards-grid { gap: 14px; }
+  .skill-card, .award { padding: 18px; }
+  .filters { margin-bottom: 20px; gap: 8px; }
+  .filter { padding: 7px 14px; font-size: 13.5px; }
+  .contact-img { min-height: 220px; }
+  .contact-img img { object-position: 50% 20%; }
   .hero .rotator { min-height: 3.3em; }
   .rotator .word { display: inline-block; margin-top: 2px; }
   .eyebrow .long { display: none; }
