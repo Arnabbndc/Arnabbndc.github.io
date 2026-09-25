@@ -70,21 +70,26 @@
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
   }
 
-  // Rotating research areas in the hero
-  var words = ['Human-Computer Interaction', 'Agentic AI', 'CS Education', 'Human-AI Interaction'];
+  // Rotating research areas in the hero (shorter forms on phones so the line never wraps)
+  var longWords = ['Human-Computer Interaction', 'Agentic AI', 'CS Education', 'Human-AI Interaction'];
+  var shortWords = ['HCI', 'Agentic AI', 'CS Education', 'Human-AI Interaction'];
+  var narrow = window.matchMedia('(max-width: 600px)');
+  function words() { return narrow.matches ? shortWords : longWords; }
   var rot = document.getElementById('rotator');
+  if (rot) rot.textContent = words()[0];
   if (rot && !reduceMotion) {
-    var wi = 0, ci = words[0].length, deleting = true;
+    var wi = 0, ci = words()[0].length, deleting = true;
     function tick() {
+      var list = words();
       if (deleting) {
         ci--;
-        if (ci <= 0) { deleting = false; wi = (wi + 1) % words.length; }
+        if (ci <= 0) { deleting = false; wi = (wi + 1) % list.length; }
       } else {
         ci++;
       }
-      rot.textContent = words[wi].slice(0, Math.max(ci, 0)) || '\u00a0';
+      rot.textContent = list[wi].slice(0, Math.max(ci, 0)) || '\u00a0';
       var delay = deleting ? 45 : 85;
-      if (!deleting && ci >= words[wi].length) { deleting = true; delay = 1900; }
+      if (!deleting && ci >= list[wi].length) { deleting = true; delay = 1900; }
       setTimeout(tick, delay);
     }
     setTimeout(tick, 2200);

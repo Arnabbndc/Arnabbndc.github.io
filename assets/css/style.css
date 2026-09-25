@@ -159,7 +159,7 @@ a.eyebrow:hover { text-decoration: none; transform: translateY(-1px); border-col
 .eyebrow i { margin-right: 6px; }
 .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-3) 25%, transparent); }
 .hero h1 { font-size: clamp(38px, 5.4vw, 62px); font-weight: 800; letter-spacing: -1px; margin: 20px 0 14px; }
-.hero .rotator { font-size: clamp(19px, 2.3vw, 25px); color: var(--muted); font-weight: 500; min-height: 1.6em; margin-bottom: 18px; }
+.hero .rotator { font-size: clamp(19px, 2.3vw, 25px); color: var(--muted); font-weight: 500; min-height: 1.6em; margin-bottom: 18px;  white-space: nowrap; }
 .rotator .word { color: var(--text); font-weight: 700; border-right: 3px solid var(--accent); padding-right: 4px; }
 .scroll-cue {
   position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 1;
@@ -492,8 +492,6 @@ footer .socials a { width: 38px; height: 38px; font-size: 16px; }
   .filter { padding: 7px 14px; font-size: 13.5px; }
   .contact-img { min-height: 220px; }
   .contact-img img { object-position: 50% 20%; }
-  .hero .rotator { min-height: 3.3em; }
-  .rotator .word { display: inline-block; margin-top: 2px; }
   .eyebrow .long { display: none; }
   .eyebrow .short { display: inline; }
 }
