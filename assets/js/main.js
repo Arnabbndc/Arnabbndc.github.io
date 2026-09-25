@@ -71,7 +71,7 @@
   }
 
   // Rotating research areas in the hero
-  var words = ['Human-Computer Interaction', 'Human-AI Interaction', 'LLM Agents', 'Agentic AI'];
+  var words = ['Human-Computer Interaction', 'Agentic AI', 'CS Education', 'Human-AI Interaction'];
   var rot = document.getElementById('rotator');
   if (rot && !reduceMotion) {
     var wi = 0, ci = words[0].length, deleting = true;

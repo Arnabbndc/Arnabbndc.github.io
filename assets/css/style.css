@@ -153,6 +153,9 @@ img { max-width: 100%; display: block; }
   color: var(--accent); font-size: 14.5px; font-weight: 600;
 }
 .eyebrow .short { display: none; }
+a.eyebrow { transition: border-color .2s, transform .2s; }
+a.eyebrow:hover { text-decoration: none; transform: translateY(-1px); border-color: var(--accent); }
+.eyebrow i.ext { font-size: 11px; margin: 0 0 0 7px; opacity: .8; }
 .eyebrow i { margin-right: 6px; }
 .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-3) 25%, transparent); }
 .hero h1 { font-size: clamp(38px, 5.4vw, 62px); font-weight: 800; letter-spacing: -1px; margin: 20px 0 14px; }
@@ -271,6 +274,13 @@ section.alt { background: var(--bg-alt); }
 .flow li.arrow { background: none; border: none; padding: 0; color: var(--accent); }
 .flow-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
 
+.research-card.featured { grid-column: 1 / -1; border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.research-card.featured p { font-size: 17px; }
+.feat-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.focus-label { font-size: 12.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); padding: 5px 12px; border-radius: 999px; }
+.research-card.compact { grid-column: 1 / -1; padding: 22px 26px; gap: 10px; }
+.research-card.compact h3 { font-size: 18px; }
+.research-card.compact p { font-size: 15px; }
 .thesis-card { grid-column: 1 / -1; padding: 30px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 30px; }
 .thesis-card h3 { font-size: 21px; margin: 6px 0 6px; }
 .thesis-card .meta { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
