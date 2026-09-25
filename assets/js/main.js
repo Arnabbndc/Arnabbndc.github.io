@@ -106,6 +106,12 @@
     });
   });
 
+  // WhatsApp links: the number is stored in reversed pieces and assembled here,
+  // so it never appears as plain text in the page source.
+  document.querySelectorAll('[data-wa]').forEach(function (a) {
+    a.href = 'https://wa.me/' + a.getAttribute('data-wa').split('|').reverse().join('');
+  });
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
