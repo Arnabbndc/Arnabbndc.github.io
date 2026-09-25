@@ -495,3 +495,113 @@ footer .socials a { width: 38px; height: 38px; font-size: 16px; }
   .eyebrow .long { display: none; }
   .eyebrow .short { display: inline; }
 }
+
+/* =====================================================================
+   Compact layout (v2, 2026-09-25). Overrides the section styles above.
+   ===================================================================== */
+section { padding: 52px 0; }
+.section-head { text-align: left; max-width: none; margin: 0 0 22px; }
+.section-head h2 { font-size: 28px; letter-spacing: -.3px; }
+#contact h2 { font-size: 28px; }
+
+/* Top: identity + bio */
+.top { padding: calc(var(--nav-h) + 40px) 0 64px; position: relative;
+  background: radial-gradient(1000px 520px at 85% 25%, var(--accent-soft), transparent 70%); }
+.top-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 48px; align-items: center; }
+.top h1 { font-size: clamp(34px, 4.4vw, 50px); font-weight: 800; letter-spacing: -1px; margin: 16px 0 8px; }
+.top .rotator { font-size: clamp(18px, 2vw, 22px); color: var(--muted); font-weight: 500; min-height: 1.6em; white-space: nowrap; margin-bottom: 16px; }
+.bio p { color: var(--muted); font-size: 16.5px; margin-bottom: 12px; }
+.top .interest-list { margin: 14px 0 20px; gap: 8px; }
+.top .interest-list li { font-size: 13.5px; padding: 5px 12px; border-radius: 999px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-color: transparent; }
+.top-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.top-actions .socials a { width: 42px; height: 42px; }
+.top-photo { display: flex; justify-content: center; }
+.top-photo .portrait { width: min(320px, 100%); }
+.top .scroll-cue { bottom: 16px; }
+
+/* Research: slim stacked cards */
+.research-list { display: grid; gap: 16px; }
+.research-card { padding: 22px 26px; gap: 10px; }
+.rc-head { display: flex; gap: 16px; align-items: flex-start; }
+.rc-head .icon { width: 46px; height: 46px; font-size: 19px; flex-shrink: 0; }
+.rc-head h3 { font-size: 19px; margin-bottom: 8px; }
+.research-card p { font-size: 15.5px; }
+
+/* News */
+.news { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.news li { display: grid; grid-template-columns: 90px 1fr; gap: 14px; align-items: baseline; font-size: 15.5px; }
+.n-date { font-weight: 700; color: var(--accent); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+/* Background */
+.bg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 44px; }
+.bg-title { display: flex; align-items: center; gap: 10px; font-size: 17px; margin: 18px 0 12px; color: var(--text); }
+.bg-col > .bg-title:first-child { margin-top: 0; }
+.bg-title i { color: var(--accent); font-size: 15px; }
+.bg-item { padding: 0 0 12px 14px; margin-bottom: 12px; border-left: 2px solid var(--border); }
+.bg-row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.bg-row strong { font-size: 15.5px; }
+.bg-date { font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bg-meta { font-size: 14.5px; color: var(--muted); margin-top: 2px; }
+.bg-item ul { margin: 6px 0 0; padding-left: 18px; font-size: 14.5px; color: var(--muted); }
+.bg-item ul li { margin-bottom: 3px; }
+.bg-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; font-size: 14px; font-weight: 600; }
+.awards { margin: 0; padding-left: 18px; font-size: 14.5px; color: var(--muted); }
+.awards li { margin-bottom: 4px; }
+.awards strong { color: var(--text); }
+#background .cp-note { text-align: left; margin-top: 12px; }
+
+/* Projects: denser cards */
+.project-grid { gap: 16px; }
+.project { padding: 18px 20px; gap: 8px; }
+.project .p-icon { width: 38px; height: 38px; font-size: 16px; border-radius: 10px; }
+.project .p-links a { width: 32px; height: 32px; }
+.project h3 { font-size: 16.5px; }
+.project p { font-size: 14.5px; }
+.filters { justify-content: flex-start; margin-bottom: 20px; }
+
+/* Contact strip */
+.contact-strip { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+.contact-strip p { color: var(--muted); margin: 6px 0 0; }
+.contact-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.contact-links a {
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14.5px; font-weight: 600;
+}
+.contact-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.contact-links i { color: var(--accent); }
+
+@media (max-width: 880px) {
+  .top { padding: calc(var(--nav-h) + 20px) 0 64px; }
+  .top-grid { grid-template-columns: 1fr; gap: 20px; text-align: center; }
+  .top-photo { order: -1; }
+  .top-photo .portrait { width: 190px; border-radius: 100px 100px 18px 18px; }
+  .top-actions, .top .interest-list { justify-content: center; }
+  .bio p { text-align: left; }
+  .bg-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  section { padding: 36px 0; }
+  .section-head { margin-bottom: 16px; }
+  .section-head h2, #contact h2 { font-size: 23px; }
+  .top h1 { font-size: 30px; margin: 12px 0 6px; }
+  .top .rotator { font-size: 16.5px; margin-bottom: 12px; }
+  .bio p { font-size: 14.5px; }
+  .top .interest-list li { font-size: 12px; padding: 4px 10px; }
+  .top-actions { gap: 10px; }
+  .top-actions .socials a { width: 38px; height: 38px; }
+  .research-card { padding: 16px; }
+  .rc-head { gap: 12px; }
+  .rc-head .icon { width: 38px; height: 38px; font-size: 16px; }
+  .rc-head h3 { font-size: 16.5px; }
+  .research-card p { font-size: 14px; }
+  .news li { grid-template-columns: 64px 1fr; gap: 10px; font-size: 14px; }
+  .n-date { font-size: 12.5px; }
+  .bg-row strong { font-size: 14.5px; }
+  .bg-meta, .bg-item ul, .awards { font-size: 13.5px; }
+  .project { padding: 14px 16px; }
+  .project h3 { font-size: 15.5px; }
+  .project p { font-size: 13.5px; }
+  .contact-strip { flex-direction: column; align-items: flex-start; }
+  .contact-links a { font-size: 13.5px; padding: 8px 12px; }
+}
