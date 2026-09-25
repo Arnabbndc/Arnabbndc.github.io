@@ -527,6 +527,11 @@ section { padding: 52px 0; }
 .rc-head h3 { font-size: 19px; margin-bottom: 8px; }
 .research-card p { font-size: 15.5px; }
 
+.rc-meta { font-size: 14px; color: var(--muted); margin: 0; }
+.rc-poster { font-size: 14px; color: var(--muted); margin: 0; padding: 10px 14px; border-radius: 10px; background: var(--bg-alt); }
+.rc-links { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; font-weight: 600; }
+.rc-links i { margin-right: 4px; }
+
 /* News */
 .news { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .news li { display: grid; grid-template-columns: 90px 1fr; gap: 14px; align-items: baseline; font-size: 15.5px; }
@@ -548,6 +553,9 @@ section { padding: 52px 0; }
 .awards { margin: 0; padding-left: 18px; font-size: 14.5px; color: var(--muted); }
 .awards li { margin-bottom: 4px; }
 .awards strong { color: var(--text); }
+.bg-full { grid-column: 1 / -1; }
+.bg-full .awards { columns: 2; column-gap: 44px; }
+.bg-full .awards li { break-inside: avoid; }
 #background .cp-note { text-align: left; margin-top: 12px; }
 
 /* Projects: denser cards */
@@ -578,6 +586,7 @@ section { padding: 52px 0; }
   .top-actions, .top .interest-list { justify-content: center; }
   .bio p { text-align: left; }
   .bg-grid { grid-template-columns: 1fr; }
+  .bg-full .awards { columns: 1; }
 }
 
 @media (max-width: 600px) {
@@ -595,6 +604,7 @@ section { padding: 52px 0; }
   .rc-head .icon { width: 38px; height: 38px; font-size: 16px; }
   .rc-head h3 { font-size: 16.5px; }
   .research-card p { font-size: 14px; }
+  .rc-meta, .rc-poster, .rc-links { font-size: 13px; }
   .news li { grid-template-columns: 64px 1fr; gap: 10px; font-size: 14px; }
   .n-date { font-size: 12.5px; }
   .bg-row strong { font-size: 14.5px; }
