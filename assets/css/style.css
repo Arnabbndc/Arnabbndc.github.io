@@ -553,6 +553,8 @@ section { padding: 52px 0; }
 .awards { margin: 0; padding-left: 18px; font-size: 14.5px; color: var(--muted); }
 .awards li { margin-bottom: 4px; }
 .awards strong { color: var(--text); }
+.awards li { position: relative; padding-right: 48px; }
+.aw-year { position: absolute; right: 0; top: 0; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .bg-full { grid-column: 1 / -1; }
 .bg-full .awards { columns: 2; column-gap: 44px; }
 .bg-full .awards li { break-inside: avoid; }
