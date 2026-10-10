@@ -20,8 +20,8 @@
       document.documentElement.classList.add('js');
       try {
         var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
+        document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
     })();
   </script>
 
@@ -82,7 +82,7 @@
         <li>Systems</li>
       </ul>
       <div class="top-actions">
-        <a class="btn btn-primary" href="cv/Arnab_Bhattacharjee_CV.pdf?v=61cda502"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        <a class="btn btn-primary" href="cv/Arnab_Bhattacharjee_CV.pdf?v=a9aa736d"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
         <ul class="socials">
           <li><a href="mailto:arnabbndc@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
           <li><a href="#contact" data-wa="263|038|1879|880" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -364,6 +364,6 @@
 
 <button class="to-top" id="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script src="assets/js/main.js?v=120d66ee" defer></script>
+<script src="assets/js/main.js?v=aa3460d7" defer></script>
 </body>
 </html>

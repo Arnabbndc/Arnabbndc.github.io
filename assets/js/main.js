@@ -2,12 +2,10 @@
   var root = document.documentElement;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Theme toggle (remembers the choice, otherwise follows the system setting)
+  // Theme toggle (light by default on every device, remembers the visitor's choice)
   var themeBtn = document.getElementById('theme-btn');
   function currentTheme() {
-    var t = root.getAttribute('data-theme');
-    if (t) return t;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
   }
   root.setAttribute('data-theme', currentTheme());
   themeBtn.addEventListener('click', function () {
