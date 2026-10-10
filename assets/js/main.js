@@ -120,3 +120,11 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
+
+// Load student project videos only when their section is opened
+document.querySelectorAll('.proj-toggle').forEach(function (d) {
+  d.addEventListener('toggle', function () {
+    if (!d.open) return;
+    d.querySelectorAll('iframe[data-src]').forEach(function (f) { f.src = f.dataset.src; f.removeAttribute('data-src'); });
+  });
+});
